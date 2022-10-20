@@ -7,13 +7,18 @@
     <title>COTACAO</title>
 </head>
 <body>
-    <h2>Cotacao do dia é R$ {{valor}}</h2>
+    <h2>Calcule seu IMC</h2>
     <div>
-        <form action="/cotacao">
-            Informe o preço do produto: 
-            <input min="1" max="500" placeholder="Digite o preço em Dólar">
+        <form action="/imc" method="POST">
+            Informe seu peso:
+            <input name="peso" placeholder="Seu peso aqui" type="text"/>
+            Informe sua altura:
+            <input name="altura" placeholder="Sua altura aqui" type="text"/>
             <input value="calcular" type="submit">
         </form>
+    </div>
+    <div>
+        {{ total }}
     </div>
 </body>
 </html>

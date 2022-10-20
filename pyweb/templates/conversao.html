@@ -9,11 +9,18 @@
 <body>
     <h2>Cotacao do dia é R$ {{valor}}</h2>
     <div>
-        <form action="/cotacao">
+        <form action="/conversao" method="POST">
             Informe o preço do produto: 
-            <input min="1" max="500" placeholder="Digite o preço em Dólar">
-            <input value="calcular" type="submit">
+            <input
+             name="preco"
+             placeholder="Digite o preço em Dólar"
+             type="text"
+             />
+             <input value="calcular" type="submit">
         </form>
+    </div>
+    <div>
+        {{ valor_reais }}
     </div>
 </body>
 </html>
