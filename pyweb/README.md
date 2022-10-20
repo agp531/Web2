@@ -16,6 +16,6 @@
 - informa o preço do produto em dolar
 - exibe o valor em reais
 
-Recebe o preço do produto (servidor)
+### Recebe o preço do produto (servidor)
 - calcula o resultado preço ($) * 5.24
 - retorna uma "respota"
